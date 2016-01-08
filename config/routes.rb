@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :whiskies
+  resources :whiskies, only: [:show, :index]
+
+  root 'whiskies#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
