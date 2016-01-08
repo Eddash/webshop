@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @whisky.name %>
+</p>
+
+<p>
+  <strong>Old:</strong>
+  <%= @whisky.old %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @whisky.price %>
+</p>
+
+<p>
+  <strong>Liter:</strong>
+  <%= @whisky.liter %>
+</p>
+
+<p>
+  <strong>Land:</strong>
+  <%= @whisky.land %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @whisky.volume %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @whisky.description %>
+</p>
+
+<p>
+  <strong>Pic url:</strong>
+  <%= @whisky.pic_url %>
+</p>
+
+<%= link_to 'Edit', edit_whisky_path(@whisky) %> |
+<%= link_to 'Back', whiskies_path %>
