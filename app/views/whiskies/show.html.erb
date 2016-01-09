@@ -1,44 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @whisky.name %>
-</p>
+<div class="large-3 small-12 column">
+  <%=image_tag @whisky.pic%>
+</div>
 
-<p>
-  <strong>Old:</strong>
-  <%= @whisky.old %>
-</p>
+<div class="large-9 small-12 column">
+  <h3>
+    <%= @whisky.name %>
+    (<%= @whisky.old %> Jahre)
+  </h3>
+  <p class="label whisky-label radius mb1">€ <%= @whisky.price %></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @whisky.price %>
-</p>
-
-<p>
-  <strong>Liter:</strong>
-  <%= @whisky.liter %>
-</p>
-
-<p>
-  <strong>Land:</strong>
-  <%= @whisky.land %>
-</p>
-
-<p>
-  <strong>Volume:</strong>
-  <%= @whisky.volume %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @whisky.description %>
-</p>
-
-<p>
-  <strong>Pic url:</strong>
-  <%= @whisky.pic_url %>
-</p>
-
-<%= link_to 'Edit', edit_whisky_path(@whisky) %> |
-<%= link_to 'Back', whiskies_path %>
+  <p><%= @whisky.description %></p>
+</div>
