@@ -1,36 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Whiskies</h1>
-
-<table>
-   <thead>
- <tr>
-   <th>Name</th>
-   <th>Old</th>
-   <th>Price</th>
-   <th>Liter</th>
-   <th>Land</th>
-   <th>Volume</th>
-   <th>Description</th>
-   <th>Pic url</th>
-   <th colspan="3"></th>
-   </tr>
- </thead>
-
-   <tbody>
- <% @whiskies.each do |whisky| %>
-     <tr>
-   <td><%= whisky.name %></td>
-   <td><%= whisky.old %></td>
-   <td><%= whisky.price %></td>
-   <td><%= whisky.liter %></td>
-   <td><%= whisky.land %></td>
-   <td><%= whisky.volume %></td>
-   <td><%= whisky.description %></td>
-   <td><%= whisky.pic_url %></td>
-   <td><%= link_to 'Show', whisky %></td>
-   <td><%= link_to 'Destroy', whisky, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-   </tr>
-     <% end %>
- </tbody>
-  </table>
+<h4 class="column">Empfohlene Whiskys</h4>
+<div class=" column">
+  <ul class="whiskies-grid no-bullet row">
+    <% @whiskies.each do |whisky| %>
+        <li class="large-3 medium-4 small-12 column">
+          <div class="whisky-card padly">
+            <%= link_to whisky, class: "pic" do %>
+                <%= image_tag whisky.pic %>
+                <% end%>
+            <div class="whisky-info ell glassy-bg padmy padlx">
+              <div class="name">
+                <h6><%= whisky.name %> <span>(<%= whisky.old %>)</span></h6>
+              </div>
+              <p class="left price label whisky-label radius">$ <%= whisky.price %></p>
+            </div>
+          </div>
+        </li>
+        <% end %>
+  </ul>
+</div>

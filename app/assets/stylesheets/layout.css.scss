@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(body_bg.png);
+  background-image: url(bgpic.jpg);
   background-position: center;
   color: #fff;
 }
@@ -25,5 +25,17 @@ body {
   .switch > div {
     position: relative;
     top: -5px;
+  }
+}
+
+.whiskies-grid {
+  .whisky-card {
+    width:220px;
+    margin:auto;
+    .pic img {
+      height: 325px;
+      width:100%;
+    }
+    .whisky-info {.name { height: 4em; }}
   }
 }
