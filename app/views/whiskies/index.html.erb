@@ -29,13 +29,8 @@
    <td><%= whisky.description %></td>
    <td><%= whisky.pic_url %></td>
    <td><%= link_to 'Show', whisky %></td>
-   <td><%= link_to 'Edit', edit_whisky_path(whisky) %></td>
    <td><%= link_to 'Destroy', whisky, method: :delete, data: { confirm: 'Are you sure?' } %></td>
    </tr>
      <% end %>
  </tbody>
   </table>
-
-<br>
-
-<%= link_to 'New Whisky', new_whisky_path %>

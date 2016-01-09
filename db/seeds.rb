@@ -6,7 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# require 'csv'
+# CSV.foreach(Rails.root.join("db/seeds_data/whiskies.csv"), headers: true) do |row|
+#  Whisky.find_or_create_by(name: row[0], old: row[1], price: row[2], liter: row[3], land: row[4], volume: row[5], description: row[6], pic_url: row[7])
+# end
+
 require 'csv'
-CSV.foreach(Rails.root.join("db/seeds_data/whiskies.csv"), headers: true) do |row|
-  Whisky.find_or_create_by(name: row[0], old: row[1], price: row[2], liter: row[3], land: row[4], volume: row[5], description: row[6], pic_url: row[7])
-end
+
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'whiskies.csv'))
+puts csv_text
