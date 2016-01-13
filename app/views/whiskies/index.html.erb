@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h4 class="column">Empfohlene Whiskys</h4>
+<div class=" column">
+  <ul class="whiskies-grid no-bullet row">
+    <% @whiskies.each do |whisky| %>
+        <li class="large-3 medium-4 small-12 column">
+          <div class="whisky-card padly">
+            <%= link_to whisky, class: "pic" do %>
+                <%= image_tag(whisky.pic, :alt => "Bild") %>
+                <% end%>
+            <div class="whisky-info ell glassy-bg padmy padlx">
+              <div class="name">
+                <h6><%= whisky.name %> <span>(<%= whisky.old %> Jahre)</span></h6>
+              </div>
+              <p class="left price label whisky-label radius">€ <%= whisky.price %></p>
+            </div>
+          </div>
+        </li>
+        <% end %>
+  </ul>
+</div>

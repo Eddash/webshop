@@ -1,0 +1,49 @@
+<%= form_for(@whisky) do |f| %>
+  <% if @whisky.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@whisky.errors.count, "error") %> prohibited this whisky from being saved:</h2>
+
+      <ul>
+      <% @whisky.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :old %><br>
+    <%= f.number_field :old %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :liter %><br>
+    <%= f.text_field :liter %>
+  </div>
+  <div class="field">
+    <%= f.label :land %><br>
+    <%= f.text_field :land %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br>
+    <%= f.text_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :pic_url %><br>
+    <%= f.text_field :pic_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

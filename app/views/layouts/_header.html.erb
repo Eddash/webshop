@@ -1,0 +1,45 @@
+<div class="row">
+  <nav class="top-bar column" data-topbar>
+
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/">
+            <i class="fi-euro"></i> Whiskydo
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar">
+        <a href="#"><span>Menü</span></a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+
+      <ul class="right">
+        <%if signed_in?%>
+            <li><%=link_to current_user.email, edit_user_registration_path%></li>
+            <li><%=link_to "Abmelden", destroy_user_session_path, method: :delete%></li>
+        <%else%>
+            <li><%=link_to "Registrieren", new_user_registration_path%></li>
+            <li><%=link_to "Anmelden", new_user_session_path%></li>
+        <%end%>
+      </ul>
+
+      <ul class="left">
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="large-8 small-9 columns">
+              <input type="text" class="radius-ls expand" placeholder="Whisky finden">
+            </div>
+            <div class="large-4 small-3 columns">
+              <a href="#" class="radius-rs button">Suchen</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+    </section>
+  </nav>
+</div>
