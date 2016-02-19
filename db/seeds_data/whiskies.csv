@@ -1,9 +1,6 @@
 name,old,price,liter,land,volume,description,pic_url
-<<<<<<< HEAD
 Aberfeldy,12,39.99,0.70,Schottland,40.00,lorem ipsum,aberfeldy1.jpg
-=======
 Aberfeldy,12,39.99,0.70,Schottland,40.00,lorem ipsum,29376799/1.jpg
->>>>>>> 9ae144219a320018ccebb6d2ca2b281eb4da1ef1
 Aberfeldy,18,79.99,1.00,Schottland,40.00,lorem ipsum,29376572/2.jpg
 an Cnoc Cutter,10,61.99,0.70,Schottland,46.00,lorem ipsum,29376574/3.jpg
 an Cnoc Barrow,10,66.99,1.00,Schottland,46.00,lorem ipsum,29376577/4.jpg

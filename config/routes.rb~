@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
+<<<<<<< HEAD
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
-
+=======
+>>>>>>> 9ae144219a320018ccebb6d2ca2b281eb4da1ef1
   resources :whiskies, only: [:show, :index]
 
   root 'whiskies#index'
