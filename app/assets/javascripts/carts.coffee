@@ -5,4 +5,4 @@ $(window).load ->
     url = $this.data('targeturl')
     $.ajax url: url, type: 'put', success: (data) ->
       $('.cart-count').html(data)
-      $this.closest('.cart-movie').slideUp()
+      $this.closest('.cart-whisky').slideUp()
