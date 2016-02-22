@@ -15,3 +15,22 @@
   <p>Umdrehungen: <%= @whisky.volume %> %</p>
   <p>Beschreibung: <%= @whisky.description %></p>
 </div>
+
+<div class="row">
+  <div class="small-2 large-2 columns">
+    <%= imdb_style_rating_for @whisky, current_user%>
+  </div>
+  <br>
+  <div class="small-2 large-4 columns">
+    <% if current_user %>
+        Geschmack: <%= rating_for @whisky, "geschmack" %>
+        <br>
+        Geruch: <%= rating_for @whisky, "geruch" %>
+        <br>
+        Flaschendesign: <%= rating_for @whisky, "flaschendesign" %>
+        <br>
+        Preis/Leistung: <%= rating_for @whisky, "preisleistung" %>
+    <% end %>
+  </div>
+</div>
+
