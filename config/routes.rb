@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 
   resources :whiskies, only: [:show, :index]
