@@ -1,8 +1,15 @@
 class Whisky < ActiveRecord::Base
   ratyrate_rateable 'geschmack', 'geruch', 'flaschendesign', 'preisleistung'
-  def pic
 
-    "http://www2.pic-upload.de/img/#{pic_url}"
+    def pic
+      "http://www2.pic-upload.de/img/#{pic_url}"
+    end
 
+    def cart_action(current_user_id)
+      if $redis.sismember "cart#{current_user_id}", id
+        "Remove from"
+      else
+        "In den"
+      end
+    end
   end
-end

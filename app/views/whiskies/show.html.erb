@@ -10,6 +10,12 @@
     (<%= @whisky.old %> Jahre)
   </h3>
   <p class="label whisky-label radius mb1">€ <%= @whisky.price %></p>
+  <%if signed_in?%>
+      <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@whisky), removeUrl: remove_from_cart_path(@whisky)} do%>
+          <i class="fi-shopping-cart"></i>
+          <span><%=@cart_action%></span> Einkaufswagen
+      <%end%>
+  <%end%>
   <p>Herkunft: <%= @whisky.land %></p>
   <p>Inhalt: <%= @whisky.liter %>L</p>
   <p>Umdrehungen: <%= @whisky.volume %> %</p>
