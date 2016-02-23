@@ -1,4 +1,4 @@
-$(window).load ->
+ready = ->
   $('a[data-target]').click (e) ->
     e.preventDefault()
     $this = $(this)
@@ -12,3 +12,6 @@ $(window).load ->
       $('.cart-count').html(data)
       $this.find('span').html(new_target)
       $this.data('target', new_target)
+
+$(document).ready(ready)
+$(document).on('page:load', ready)
