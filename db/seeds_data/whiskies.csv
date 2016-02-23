@@ -1,12 +1,13 @@
 name,old,price,liter,land,volume,description,pic_url
-Aberfeldy,12,39.99,0.70,Schottland,40.00,lorem ipsum,aberfeldy1.jpg
-Aberfeldy,12,39.99,0.70,Schottland,40.00,lorem ipsum,29376799/1.jpg
-Aberfeldy,18,79.99,1.00,Schottland,40.00,lorem ipsum,29376572/2.jpg
-an Cnoc Cutter,10,61.99,0.70,Schottland,46.00,lorem ipsum,29376574/3.jpg
-an Cnoc Barrow,10,66.99,1.00,Schottland,46.00,lorem ipsum,29376577/4.jpg
-Ardmore Legacy,5,22.99,0.70,Schottland,40.00,lorem ipsum,29376578/5.jpg
-Ardmore Tradition Peated,5,25.99,1.00,Schottland,40.00,lorem ipsum,29376606/6.jpg
-Auchentoshan,12,35.99,0.70,Schottland,40.00,lorem ipsum,29376611/7.jpg
-Auchentoshan Three Wood,10,46.99,0.70,Schottland,43.00,lorem ipsum,29376615/8.jpg
-Bulleit Frontier Bourbon,7,22.99,0.70,USA (Kentucky),45.00,lorem ipsum,29376617/9.jpg
-Bulleit Frontier Rye,7,25.99,0.70,USA (Kentucky),45.00,lorem ipsum,29376618/10.jpg
+Kappa Daniels,50,999.99,1.00,Deutschland,50.00,Der super leckere im eigenen Haus gebraute Kappa Whisky EINZIGARTIG!,0.jpg
+Aberfeldy,12,39.99,0.70,Schottland,40.00,lorem ipsum,1.jpg
+Aberlour,16,59.99,0.70,Schottland,43.00,lorem ipsum,2.jpg
+Ardmore Legacy,5,22.99,0.70,Schottland,40.00,lorem ipsum,3.jpg
+Auchentoshan Three Wood,10,46.99,0.70,Schottland,43.00,lorem ipsum,4.jpg
+Bakers,7,54.99,0.70,USA (Kentucky),53.50,lorem ipsum,5.jpg
+Ballantines,12,22.99,0.70,Schottland,40.00,lorem ipsum,6.jpg
+Bulleit Frontier Rye,7,25.99,0.70,USA (Kentucky),45.00,lorem ipsum,7.jpg
+Caol lla,25,169.99,0.70,Schottland,43.00,lorem ipsum,8.jpg
+Dalmore King Alexander,20,139.99,0.70,Schottland,40.00,lorem ipsum,9.jpg
+Evan Williams Black Label,10,44.99,1.750,USA (Kentucky),43.00,lorem ipsum,10.jpg
+Famous Grouse,5,19.99,0.70,Schottland,40.00,lorem ipsum,11.jpg
