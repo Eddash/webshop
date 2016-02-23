@@ -1,4 +1,7 @@
 class Whisky < ActiveRecord::Base
+  has_many :purchases
+  has_many :buyers, through: :purchases
+
   ratyrate_rateable 'geschmack', 'geruch', 'flaschendesign', 'preisleistung'
 
     def pic

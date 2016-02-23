@@ -22,4 +22,6 @@
         </div>
       </div>
   <%end%>
+
+  <%=link_to "Zur Kasse", new_transaction_path, class: "button" unless current_user.get_cart_whiskies.blank?%>
 </div>
