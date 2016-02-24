@@ -17,9 +17,9 @@ class TransactionsController < ApplicationController
         payment_method_nonce: params[:payment_method_nonce])
     if @result.success?
       current_user.purchase_cart_whiskies!
-      redirect_to root_url, notice: "Congraulations! You've purchased new movies successfully!"
+      redirect_to root_url, notice: "Herzlichen Glückwunsch der Einkauf war erfolgreich!"
     else
-      flash[:alert] = "Something went wrong while processing your transaction. Please try again!"
+      flash[:alert] = "Irgendwas ist schief gelaufen, bitte versuchen Sie es noch einmal!"
       gon.client_token = generate_client_token
       render :new
     end
@@ -32,7 +32,7 @@ class TransactionsController < ApplicationController
 
   def check_cart!
     if current_user.get_cart_whiskies.blank?
-      redirect_to root_url, alert: "Please add some items to your cart before processing your transaction!"
+      redirect_to root_url, alert: "Bitte fügen Sie einige Produkte ihrem Warenkorb hinzu bevor es weitergehen kann!"
     end
   end
 end
