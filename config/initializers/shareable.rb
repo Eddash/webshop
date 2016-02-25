@@ -5,9 +5,9 @@ Shareable.configure do |config|
   ## Valid names are: twitter facebook linkedin pinterest google_plus reddit tumblr stumble_upon
   #config.names = %w[ twitter facebook linkedin pinterest google_plus reddit tumblr stumble_upon ]
 
-  config.static_link=true # renders html links instead of javascript buttons.
+  #config.static_link=true # renders html links instead of javascript buttons.
   #config.button_only=false # omit initializing javacript code. Only button code is rendered.
-  #config.turbolinks=true # set to true to enable turbolinks fixes. Requires jquery to work!
+  config.turbolinks=true # set to true to enable turbolinks fixes. Requires jquery to work!
 
   ###############
   ##facebook
