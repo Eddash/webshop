@@ -3,7 +3,7 @@ class WhiskiesController < ApplicationController
   # GET /whiskies
   # GET /whiskies.json
   def index
-    @whiskies = Whisky.all
+    @whiskies = Whisky.paginate(:page => params[:page], :per_page => 8)
   end
 
   def new

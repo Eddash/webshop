@@ -1,7 +1,7 @@
 <h4 class="column">Empfohlene Whiskys</h4>
 <div class=" column">
   <ul class="whiskies-grid no-bullet row">
-    <% @whiskies.each do |whisky| %>
+    <% @whiskies.each_with_index do |whisky, index| %>
         <li class="large-3 medium-4 small-12 column">
           <div class="whisky-card padly">
             <%= link_to whisky, class: "pic" do %>
@@ -16,5 +16,8 @@
           </div>
         </li>
     <% end %>
+    <div class="apple_pagination">
+      <%= will_paginate @whiskies, :container => false %>
+    </div>
   </ul>
 </div>
