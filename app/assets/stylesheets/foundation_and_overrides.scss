@@ -826,7 +826,7 @@ $label-font-sizing: rem-calc(14);
 // $label-font-family: $body-font-family;
 
 .whisky-label {
-  @include label( $text-size:13px, $bg: #3D3D32 );
+  @include label( $text-size:13px, $bg: #333333 );
   color: #CC6600;
 }
 
