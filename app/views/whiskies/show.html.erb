@@ -24,7 +24,7 @@
 
 <div class="row">
   <br>
-  <div class="small-2 large-4 columns">
+  <div class="large-2 columns">
     <% if current_user %>
         Geschmack: <%= rating_for @whisky, "geschmack", disable_after_rate: false, target: '#hintDiv' %>
         <div id="hintDiv"></div>
