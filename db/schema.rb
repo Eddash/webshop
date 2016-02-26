@@ -31,13 +31,13 @@ ActiveRecord::Schema.define(version: 20160223144719) do
   end
 
   create_table "purchases", force: :cascade do |t|
-    t.integer  "movie_id",   limit: 4
+    t.integer  "whisky_id",  limit: 4
     t.integer  "buyer_id",   limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "purchases", ["movie_id", "buyer_id"], name: "index_purchases_on_movie_id_and_buyer_id", unique: true, using: :btree
+  add_index "purchases", ["whisky_id", "buyer_id"], name: "index_purchases_on_whisky_id_and_buyer_id", unique: true, using: :btree
 
   create_table "rates", force: :cascade do |t|
     t.integer  "rater_id",      limit: 4
