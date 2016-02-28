@@ -46,7 +46,7 @@
     overflow: hidden; }
 
 .apple_pagination {
-  background: #994C00;
+  background: transparent;
   border: 1px solid #000000;
   text-align: center;
   padding: 1em;
