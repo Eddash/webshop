@@ -17,7 +17,7 @@
     <section class="top-bar-section">
 
       <ul class="right">
-        <%if signed_in?%>
+        <%if current_user.present?%>
             <li>
               <%= link_to cart_path do%>
                   <i class="fi-shopping-cart"></i>
