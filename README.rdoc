@@ -23,7 +23,15 @@ o Konfiguration und Datenbank:
   •	rails server
 
 
-* Tests anwenden:
+o Tests anwenden:
+  •	bundle exec rspec spec/register_spec.rb
+  •	Über Regestrieren wird ein User in der Datenbank angelegt
+  •	User ist anschließend eingeloggt
+  •	
+  •	bundle exec rspec spec/sign_in_spec.rb
+  •	Legt einen Nutzer in der Datenbank an
+  •	User logt sich über den Anmelde-Button ein
+  • User logt sich wieder über den Abmelde-Button aus
 
 o benutzte Gems:
 
