@@ -3,18 +3,18 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-* Ruby version:
-o	Ruby 2.2.2p95
 
-* Was muss installiert sein?
-o
+o	Ruby Version:
+  •	Ruby 2.2.2p95
+
+
+o Was muss installiert sein?
   •	Rails 4.2.5
   •	MySQL (https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
   •	Redis (http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
 
 
-* Konfiguration und Datenbank:
-o
+o Konfiguration und Datenbank:
   •	git clone https://github.com/Eddash/webshop.git
   •	bundle install
   •	rake db:drop
@@ -25,7 +25,7 @@ o
 
 * Tests anwenden:
 
-* benutzte Gems:
+o benutzte Gems:
 
   •	Devise
   •	Redis und Hiredis
