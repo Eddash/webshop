@@ -14,21 +14,20 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :neues_passwort %> <i>(leer lassen wenn das Passwort nicht geändert wird)</i>
+      <%= f.label :password %> <i>(leer lassen wenn das Passwort nicht geändert wird)</i>
       <div class="mb1"><%= f.password_field :password, autocomplete: "off" %></div>
     </div>
     <div class="field">
-      <%= f.label :passwort_wiederholen %>
+      <%= f.label :password_confirmation %>
       <div class="mb1"><%= f.password_field :password_confirmation, autocomplete: "off" %></div>
     </div>
     <div class="field">
-      <%= f.label :aktuelles_passwort %> <i>(aktuelles Passwort eingeben um Änderungen zu bestätigen)</i>
+      <%= f.label :current_password %> <i>(aktuelles Passwort eingeben um Änderungen zu bestätigen)</i>
       <div class="mb1"><%= f.password_field :current_password, autocomplete: "off" %></div>
     </div>
     <div><%= f.submit "Aktualisieren", class: "button" %></div>
 <% end %>
-
-<h3>Account löschen</h3>
+  <br>
 <p>Genug gesoffen?</p>
 <div><%= button_to "Meinen Account löschen", registration_path(resource_name), data: { confirm: "Sind Sie sicher?" }, method: :delete , class: "button"%></div>
 

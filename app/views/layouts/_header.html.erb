@@ -17,7 +17,7 @@
     <section class="top-bar-section">
 
       <ul class="right">
-        <%if current_user.present?%>
+        <%if signed_in?%>
             <li>
               <%= link_to cart_path do%>
                   <i class="fi-shopping-cart"></i>
@@ -36,12 +36,6 @@
       <ul class="left">
         <li class="has-form">
           <div class="row collapse">
-            <div class="large-8 small-9 columns">
-              <input type="text" class="radius-ls expand" placeholder="Whisky finden">
-            </div>
-            <div class="large-4 small-3 columns">
-              <a href="#" class="radius-rs button">Suchen</a>
-            </div>
           </div>
         </li>
       </ul>

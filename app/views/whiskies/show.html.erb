@@ -26,17 +26,10 @@
   <br>
   <div class="large-2 columns">
     <% if current_user %>
-        Geschmack: <%= rating_for @whisky, "geschmack", disable_after_rate: false, target: '#hintDiv' %>
-        <div id="hintDiv"></div>
-        <br>
-        Geruch: <%= rating_for @whisky, "geruch", disable_after_rate: false, target: '#hintDiv1' %>
-        <div id="hintDiv1"></div>
-        <br>
-        Flaschendesign: <%= rating_for @whisky, "flaschendesign", disable_after_rate: false, target: '#hintDiv2' %>
-        <div id="hintDiv2"></div>
-        <br>
-        Preis/Leistung: <%= rating_for @whisky, "preisleistung", disable_after_rate: false, target: '#hintDiv3' %>
-        <div id="hintDiv3"></div>
+        Geschmack: <%= rating_for @whisky, "geschmack", disable_after_rate: false %>
+        Geruch: <%= rating_for @whisky, "geruch", disable_after_rate: false %>
+        Flaschendesign: <%= rating_for @whisky, "flaschendesign", disable_after_rate: false %>
+        Preis/Leistung: <%= rating_for @whisky, "preisleistung", disable_after_rate: false %>
     <% end %>
   </div>
 </div>
