@@ -5,39 +5,38 @@ application up and running.
 
 * Ruby version: 2.2.2p95
 
-## Was muss installiert sein?
-```
-Rails 4.2.5
-MySQL (https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
-Redis (http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
-```
+* Was muss installiert sein?
 
-## Konfiguration und Datenbank:
-```
-git clone https://github.com/Eddash/webshop.git
-bundle install
-rake db:drop
-rake db:create db:migrate db:seed
+* Rails 4.2.5
+* MySQL (https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
+* Redis (http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
 
-redis-server
-rails server
-```
 
-## Tests anwenden:
+* Konfiguration und Datenbank:
 
-## benutzte Gems:
-```
--Devise
--Redis und Hiredis
--Foundation-Rails
--Ratyrate (whiskys nach Kriterien bewerten)
--Braintree (für funktionierende Bezahlung!)
--Figaro
--Gon
--Shareable (twittern und co.)
--Will_Paginate (für Begrenzung auf einer Seite)
--Factory_Girl (Tests)
-```
+* git clone https://github.com/Eddash/webshop.git
+* bundle install
+* rake db:drop
+* rake db:create db:migrate db:seed
+
+* redis-server
+* rails server
+
+
+* Tests anwenden:
+
+* benutzte Gems:
+
+* Devise
+* Redis und Hiredis
+* Foundation-Rails
+* Ratyrate (whiskys nach Kriterien bewerten)
+* Braintree (für funktionierende Bezahlung!)
+* Figaro
+* Gon
+* Shareable (twittern und co.)
+* Will_Paginate (für Begrenzung auf einer Seite)
+* Factory_Girl (Tests)
 
 
 Please feel free to use a different markup language if you do not plan to run
