@@ -7,9 +7,9 @@ application up and running.
 
 * Was muss installiert sein?
 
-Rails 4.2.5
-MySQL (https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
-Redis (http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
+> Rails 4.2.5
+> MySQL (https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
+> Redis (http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
 
 
 * Konfiguration und Datenbank:
